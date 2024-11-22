@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAh-j5-4Sc">
-                                <rect key="frame" x="64" y="274" width="265" height="61"/>
+                                <rect key="frame" x="64" y="300.33333333333331" width="265" height="61"/>
                                 <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Resposta01">
@@ -66,8 +66,8 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZq-oF-ajw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-Lo-fs7">
-                                <rect key="frame" x="64" y="367" width="265" height="61"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-Lo-fs7">
+                                <rect key="frame" x="64" y="393.33333333333331" width="265" height="61"/>
                                 <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Resposta02">
@@ -78,8 +78,8 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egy-VE-udb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-j3-KpY">
-                                <rect key="frame" x="64" y="460" width="265" height="61"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-j3-KpY">
+                                <rect key="frame" x="64" y="486.33333333333326" width="265" height="61"/>
                                 <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Resposta03">
@@ -91,8 +91,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awnser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-go-296">
-                                <rect key="frame" x="64" y="167" width="265" height="75"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="64"/>
+                                <rect key="frame" x="64" y="231" width="265" height="37.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -110,13 +110,13 @@
                             <constraint firstItem="SAh-j5-4Sc" firstAttribute="top" secondItem="RbV-go-296" secondAttribute="bottom" constant="32" id="kBA-qL-6a1"/>
                             <constraint firstItem="Ybh-2p-Dd4" firstAttribute="trailing" secondItem="SAh-j5-4Sc" secondAttribute="trailing" constant="64" id="m27-2k-zNa"/>
                             <constraint firstItem="Ybh-2p-Dd4" firstAttribute="trailing" secondItem="RbV-go-296" secondAttribute="trailing" constant="64" id="tw9-zS-Lw7"/>
-                            <constraint firstItem="RbV-go-296" firstAttribute="top" secondItem="tKX-v0-K2W" secondAttribute="topMargin" constant="64" id="yDA-wM-Ovq"/>
+                            <constraint firstItem="RbV-go-296" firstAttribute="top" secondItem="tKX-v0-K2W" secondAttribute="topMargin" constant="128" id="yDA-wM-Ovq"/>
                             <constraint firstItem="Mqb-j3-KpY" firstAttribute="top" secondItem="82t-Lo-fs7" secondAttribute="bottom" constant="32" id="zx7-oW-WaW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rue-WQ-VCw"/>
                     <connections>
-                        <outlet property="tituloQuestaoLabel" destination="RbV-go-296" id="gHH-gD-WG3"/>
+                        <outlet property="questionTitleLabel" destination="RbV-go-296" id="gHH-gD-WG3"/>
                         <outletCollection property="botoesResposta" destination="SAh-j5-4Sc" collectionClass="NSMutableArray" id="Djn-Ss-eDo"/>
                         <outletCollection property="botoesResposta" destination="82t-Lo-fs7" collectionClass="NSMutableArray" id="0Zq-Qr-q4t"/>
                         <outletCollection property="botoesResposta" destination="Mqb-j3-KpY" collectionClass="NSMutableArray" id="hfF-VL-qGn"/>
