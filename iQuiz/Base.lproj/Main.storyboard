@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWG-3L-VCh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWG-3L-VCh">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wht-5Y-VZE">
-                                <rect key="frame" x="85" y="421" width="240" height="128"/>
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
@@ -30,7 +30,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7Y-0h-l3s"/>
-                                    <segue destination="dEr-ub-BC1" kind="show" id="rwa-9c-Pc4"/>
+                                    <segue destination="dEr-ub-BC1" kind="show" id="G1f-0c-id1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,17 +46,81 @@
             </objects>
             <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
         </scene>
-        <!--Question View Controller-->
+        <!--Questao View Controller-->
         <scene sceneID="AAo-Ml-KyX">
             <objects>
-                <viewController id="dEr-ub-BC1" customClass="QuestionViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dEr-ub-BC1" customClass="QuestaoViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tKX-v0-K2W">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAh-j5-4Sc">
+                                <rect key="frame" x="64" y="274" width="265" height="61"/>
+                                <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Resposta01">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="dEr-ub-BC1" eventType="touchUpInside" id="jRE-Bi-rop"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZq-oF-ajw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-Lo-fs7">
+                                <rect key="frame" x="64" y="367" width="265" height="61"/>
+                                <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Resposta02">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="dEr-ub-BC1" eventType="touchUpInside" id="q4w-RO-uwz"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egy-VE-udb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-j3-KpY">
+                                <rect key="frame" x="64" y="460" width="265" height="61"/>
+                                <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Resposta03">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="dEr-ub-BC1" eventType="touchUpInside" id="q30-xN-E6h"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDM-sQ-Sc9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awnser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-go-296">
+                                <rect key="frame" x="64" y="167" width="265" height="75"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ybh-2p-Dd4"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="Ybh-2p-Dd4" firstAttribute="trailing" secondItem="Mqb-j3-KpY" secondAttribute="trailing" constant="64" id="3pz-xi-O9v"/>
+                            <constraint firstItem="82t-Lo-fs7" firstAttribute="leading" secondItem="Ybh-2p-Dd4" secondAttribute="leading" constant="64" id="EXb-tg-Y6E"/>
+                            <constraint firstItem="82t-Lo-fs7" firstAttribute="top" secondItem="SAh-j5-4Sc" secondAttribute="bottom" constant="32" id="Ego-3P-1TM"/>
+                            <constraint firstItem="Ybh-2p-Dd4" firstAttribute="trailing" secondItem="82t-Lo-fs7" secondAttribute="trailing" constant="64" id="GoK-Vh-2ez"/>
+                            <constraint firstItem="SAh-j5-4Sc" firstAttribute="leading" secondItem="Ybh-2p-Dd4" secondAttribute="leading" constant="64" id="PrV-Hb-b8Y"/>
+                            <constraint firstItem="Mqb-j3-KpY" firstAttribute="leading" secondItem="Ybh-2p-Dd4" secondAttribute="leading" constant="64" id="Xjc-gY-plI"/>
+                            <constraint firstItem="RbV-go-296" firstAttribute="leading" secondItem="Ybh-2p-Dd4" secondAttribute="leading" constant="64" id="dBl-nk-S8B"/>
+                            <constraint firstItem="SAh-j5-4Sc" firstAttribute="top" secondItem="RbV-go-296" secondAttribute="bottom" constant="32" id="kBA-qL-6a1"/>
+                            <constraint firstItem="Ybh-2p-Dd4" firstAttribute="trailing" secondItem="SAh-j5-4Sc" secondAttribute="trailing" constant="64" id="m27-2k-zNa"/>
+                            <constraint firstItem="Ybh-2p-Dd4" firstAttribute="trailing" secondItem="RbV-go-296" secondAttribute="trailing" constant="64" id="tw9-zS-Lw7"/>
+                            <constraint firstItem="RbV-go-296" firstAttribute="top" secondItem="tKX-v0-K2W" secondAttribute="topMargin" constant="64" id="yDA-wM-Ovq"/>
+                            <constraint firstItem="Mqb-j3-KpY" firstAttribute="top" secondItem="82t-Lo-fs7" secondAttribute="bottom" constant="32" id="zx7-oW-WaW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rue-WQ-VCw"/>
+                    <connections>
+                        <outlet property="tituloQuestaoLabel" destination="RbV-go-296" id="gHH-gD-WG3"/>
+                        <outletCollection property="botoesResposta" destination="SAh-j5-4Sc" collectionClass="NSMutableArray" id="Djn-Ss-eDo"/>
+                        <outletCollection property="botoesResposta" destination="82t-Lo-fs7" collectionClass="NSMutableArray" id="0Zq-Qr-q4t"/>
+                        <outletCollection property="botoesResposta" destination="Mqb-j3-KpY" collectionClass="NSMutableArray" id="hfF-VL-qGn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRH-JB-0TH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
