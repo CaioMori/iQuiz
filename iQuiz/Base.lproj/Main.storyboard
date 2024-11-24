@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWG-3L-VCh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWG-3L-VCh">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,36 +55,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAh-j5-4Sc">
-                                <rect key="frame" x="64" y="300.33333333333331" width="265" height="61"/>
-                                <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Resposta01">
-                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
-                                </buttonConfiguration>
+                                <rect key="frame" x="64" y="300.33333333333331" width="265" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resposta01">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="respostaBotaoPressionado:" destination="dEr-ub-BC1" eventType="touchUpInside" id="jRE-Bi-rop"/>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZq-oF-ajw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-Lo-fs7">
-                                <rect key="frame" x="64" y="393.33333333333331" width="265" height="61"/>
-                                <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Resposta02">
-                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
-                                </buttonConfiguration>
+                                <rect key="frame" x="64" y="372.33333333333331" width="265" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resposta02">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="respostaBotaoPressionado:" destination="dEr-ub-BC1" eventType="touchUpInside" id="q4w-RO-uwz"/>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egy-VE-udb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-j3-KpY">
-                                <rect key="frame" x="64" y="486.33333333333326" width="265" height="61"/>
-                                <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Resposta03">
-                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
-                                </buttonConfiguration>
+                                <rect key="frame" x="64" y="444.33333333333331" width="265" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resposta03">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="respostaBotaoPressionado:" destination="dEr-ub-BC1" eventType="touchUpInside" id="q30-xN-E6h"/>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDM-sQ-Sc9"/>
