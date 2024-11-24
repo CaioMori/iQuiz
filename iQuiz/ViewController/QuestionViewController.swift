@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuestaoViewController: UIViewController {
+class QuestionViewController: UIViewController {
     
     var score: Int = 0
     
@@ -31,14 +31,23 @@ class QuestaoViewController: UIViewController {
             score += 1
             sender.backgroundColor = .green
             print("O usuário acertou")
-            if (questionNumber < questions.count - 1){
-                questionNumber += 1
-                Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(generateQuestion), userInfo: nil, repeats: false)
-            }
-            return // garante que saia da função
+        } else {
+            sender.backgroundColor = .red
+            print("O usuário errou")
         }
-        sender.backgroundColor = .red
-        print("O usuário errou")
+        
+        if (questionNumber < questions.count - 1){
+            questionNumber += 1
+            setTimer(after: 0.5, execute: generateQuestion)
+            
+        } else {
+            questionNumber = 0
+            setTimer(after: 0.5, execute: navigateToResult)
+        }
+    }
+    
+    @objc func navigateToResult(){
+        performSegue(withIdentifier: "navigateToResults", sender: nil)
     }
     
     func setLayout() {
@@ -53,15 +62,23 @@ class QuestaoViewController: UIViewController {
     }
     
     @objc func generateQuestion(){
-        if (questionNumber == questions.count - 1) {
-            questionNumber = 0
-        }
         questionTitleLabel.text = questions[questionNumber].title
         for button in botoesResposta {
             let buttonTitle = questions[questionNumber].awnsers[button.tag]
             button.setTitle(buttonTitle, for: .normal)
             button.backgroundColor = UIColor(red: 255/255, green: 140/255, blue: 14/255, alpha: 1.0)
         }
+    }
+    
+    func setTimer(after time: Double, execute action: @escaping () -> Void) {
+        Timer.scheduledTimer(withTimeInterval: time, repeats: false) { _ in
+            action()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultsVC = segue.destination as? ResultsViewController else { return }
+        resultsVC.score = self.score
     }
 
 }
